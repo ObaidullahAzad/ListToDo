@@ -148,7 +148,7 @@ a{
     padding: 20px 0px;
 }
 #add-link {
-    color: #EB796F;
+    color: #683b5c;
     text-decoration: none;
     font-size: 30px;
     text-shadow: 1px 1px #81413b;
@@ -158,7 +158,8 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #bb677f;
+    background: linear-gradient(left,#705781,#bb677f);
+    color: #cdafe5;
 }
 input[type=text],
 input[type=password],
