@@ -1,0 +1,34 @@
+{% extends 'Login/main.html' %}
+{% block content%}
+
+
+
+
+
+<div class = "login-card11">
+    <div class = "login-head">
+        <h1>Login</h1>
+        </div>
+<form method = "POST">
+    {% csrf_token %}
+    <div class ="input-login">
+    <ion-icon size = "large" name="person-outline"></ion-icon><label>{{form.username}}</lable>
+    </div>
+    <div class ="input-login">    
+    <ion-icon size = "large" name="lock-closed-outline"></ion-icon><label>{{form.password}}</lable>
+
+         
+    </div>
+    <div class="input-oak">
+    <input id="input-button" type ="submit" value = "Login">
+    </div>    
+</form>
+<div class = "other1">
+<p>Don't have an account?<a href="{% url 'register'%}">       <ion-icon name="person-add-outline"></ion-icon>   Register</a></p>
+</div>
+</div>
+
+
+
+
+{%endblock content%}

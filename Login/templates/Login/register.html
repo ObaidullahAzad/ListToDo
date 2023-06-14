@@ -1,0 +1,28 @@
+{% extends 'Login/main.html' %}
+{% block content%}
+<div class = "header-bar">
+<h1>Register</h1>
+</div>
+
+
+
+<div class="form-card">
+      <form method = "POST">
+    {% csrf_token %}
+    <label>{{form.username.label}}</label>
+    {{form.username}}
+    <label>{{form.password1.label}}</label>
+    {{form.password1}}
+    <label>{{form.password2.label}}</label>
+    {{form.password2}}
+    <div class = "register-btn">
+    <input id="input-button" type ="submit" value = "Register">
+    </div>
+
+</form>
+<p>Already have an account?<a href="{% url 'tasks'%}">  <ion-icon name="log-out-outline" size="large"></ion-icon>   login</a></p>
+</div>
+
+
+
+{%endblock content%}
